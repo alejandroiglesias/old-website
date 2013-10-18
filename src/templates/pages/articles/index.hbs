@@ -1,0 +1,15 @@
+---
+title: Articles
+area: main
+---
+
+
+<h1>Articles</h1>
+
+<ul>
+  {{#each pages}}
+  {{#is this.data.area 'articles'}}
+  <li><a href="/articles/{{this.pageName}}">{{data.title}}</a></li>
+  {{/is}}
+  {{/each}}
+</ul>
